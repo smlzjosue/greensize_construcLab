@@ -219,7 +219,7 @@
         "gridR": 158,
         "gridWidth": 32,
         "snap": false,
-        "windowMask": true,
+        "windowMask": false,
         "zoomFactor": 0.16
       },
       "objectsGroups": [
@@ -786,7 +786,7 @@
               "parameters": [
                 "Contador",
                 "=",
-                "1"
+                "0"
               ],
               "subInstructions": []
             }
@@ -910,7 +910,7 @@
                               "parameters": [
                                 "Contador",
                                 "=",
-                                "1"
+                                "0\n"
                               ],
                               "subInstructions": []
                             }
@@ -933,14 +933,12 @@
                             {
                               "type": {
                                 "inverted": false,
-                                "value": "MettreXY"
+                                "value": "ModVarScene"
                               },
                               "parameters": [
-                                "dinamic_1_1",
+                                "Contador",
                                 "=",
-                                "4",
-                                "=",
-                                "22"
+                                "1"
                               ],
                               "subInstructions": []
                             }
@@ -1069,7 +1067,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "DIAS DE LA SEMANA (VISTAS Y TEXTOS)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1081,10 +1079,335 @@
                   "creationTime": 0,
                   "disabled": false,
                   "folded": false,
-                  "name": "DOMINGO",
+                  "name": "DOMINGO (La jirafa) Capitulo 1",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
-                  "events": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "1\n"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_1",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "2"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_2",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "3\n"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_3",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "4\n"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_4",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "5\n"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_5",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "6\n"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_6",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "7\n"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_7",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "8\n"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_8",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "Contador",
+                            "=",
+                            "9\n"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "dinamic_1_9",
+                            "=",
+                            "4",
+                            "=",
+                            "22"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ],
                   "parameters": []
                 },
                 {
