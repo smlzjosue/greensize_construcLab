@@ -1,0 +1,3 @@
+LSApplicationQueriesSchemes
+plugin de whatsaap linea 558
+(social-sharing.m)

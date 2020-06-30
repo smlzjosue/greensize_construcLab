@@ -220,9 +220,42 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": true,
-        "zoomFactor": 0.208
+        "zoomFactor": 0.16
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "HISTORIA",
+          "objects": [
+            {
+              "name": "dinamic_1_1"
+            },
+            {
+              "name": "dinamic_1_2"
+            },
+            {
+              "name": "dinamic_1_3"
+            },
+            {
+              "name": "dinamic_1_4"
+            },
+            {
+              "name": "dinamic_1_5"
+            },
+            {
+              "name": "dinamic_1_6"
+            },
+            {
+              "name": "dinamic_1_7"
+            },
+            {
+              "name": "dinamic_1_8"
+            },
+            {
+              "name": "dinamic_1_9"
+            }
+          ]
+        }
+      ],
       "variables": [
         {
           "name": "Contador",
@@ -362,8 +395,8 @@
           "locked": false,
           "name": "dinamic_1_9",
           "width": 798,
-          "x": 955,
-          "y": -732,
+          "x": 5,
+          "y": 26,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -763,22 +796,6 @@
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -803,12 +820,27 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "GRUPOS DE EFECTOS POR DIA DEL JUEGO",
+              "comment2": ""
+            },
+            {
               "colorB": 228,
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "EFECTOS DE TRANSICION (SONIDOS, TEMPORIZADORES, CONTROLADORES)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -825,12 +857,27 @@
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "GRUPOS DE VISTAS:",
+                      "comment2": ""
+                    },
+                    {
                       "colorB": 228,
                       "colorG": 176,
                       "colorR": 74,
                       "creationTime": 0,
                       "disabled": false,
-                      "folded": true,
+                      "folded": false,
                       "name": "DOMINGO-EFECTO",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
@@ -838,17 +885,66 @@
                         {
                           "disabled": false,
                           "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [],
-                          "events": []
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "EVENTOS AL INICIALIZAR EL DOMINGO",
+                          "comment2": ""
                         },
                         {
                           "disabled": false,
                           "folded": false,
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [],
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "Contador",
+                                "=",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "HISTORIA",
+                                "=",
+                                "-4",
+                                "=",
+                                "-564"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "dinamic_1_1",
+                                "=",
+                                "4",
+                                "=",
+                                "22"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
                           "events": []
                         }
                       ],
@@ -860,11 +956,27 @@
                       "colorR": 74,
                       "creationTime": 0,
                       "disabled": false,
-                      "folded": false,
+                      "folded": true,
                       "name": "LUNES-EFECTO",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
-                      "events": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "EVENTOS AL INICIALIZAR EL LUNES",
+                          "comment2": ""
+                        }
+                      ],
                       "parameters": []
                     },
                     {
@@ -939,32 +1051,6 @@
                       "creationTime": 0,
                       "disabled": false,
                       "folded": false,
-                      "name": "",
-                      "source": "",
-                      "type": "BuiltinCommonInstructions::Group",
-                      "events": [],
-                      "parameters": []
-                    },
-                    {
-                      "colorB": 228,
-                      "colorG": 176,
-                      "colorR": 74,
-                      "creationTime": 0,
-                      "disabled": false,
-                      "folded": false,
-                      "name": "",
-                      "source": "",
-                      "type": "BuiltinCommonInstructions::Group",
-                      "events": [],
-                      "parameters": []
-                    },
-                    {
-                      "colorB": 228,
-                      "colorG": 176,
-                      "colorR": 74,
-                      "creationTime": 0,
-                      "disabled": false,
-                      "folded": false,
                       "name": "OTROS-EFECTOS",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
@@ -983,7 +1069,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "DIAS DE LA SEMANA (VISTAS Y TEXTOS)",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
