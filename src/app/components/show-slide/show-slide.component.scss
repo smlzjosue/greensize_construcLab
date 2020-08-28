@@ -1,0 +1,23 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+app-next-previus{
+    margin-top: 25%;
+}
+app-progress-bar{
+    margin-bottom: 5%;
+}
+ion-slides{
+
+    height: 100px;
+}
+
+.image-slide {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

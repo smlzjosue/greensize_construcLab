@@ -1,9 +1,0 @@
-revisar el sitio web:
-https://www.dropbox.com/s/me746z4xvlih5xc/monkey%20businees_interaccion.mp4?dl=0
-
-widht: 798
-Height: 528
-
-visible: -4, 22
-
-No visible: -4, -564

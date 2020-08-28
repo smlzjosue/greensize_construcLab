@@ -1,0 +1,23 @@
+.contenido{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+head app-sound-control {
+    padding: 1rem 2rem;
+}
+.center{
+    flex: 1;
+    
+}
+.end{
+    display: flex;
+    flex-direction: row-reverse;
+}
